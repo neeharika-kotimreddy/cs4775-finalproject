@@ -39,10 +39,10 @@ Before using the project, ensure the following are installed:
         4. output_alignment_{algorithm} = os.path.join(working_directory, f"output_files/{algorithm}/test{i}_output.fasta")
 3. To analyze short sequences, modify the paths in the main function of benchmark.py as follows:
     ```bash
-      1. msf_ref = os.path.join(working_directory, f"short_reference_files/test{i}_ref.msf")
-      2. input_sequences = os.path.join(working_directory, f"short_input_files/test{i}_input.fasta")
-      3. reference_alignment = os.path.join(working_directory, f"short_reference_files/test{i}_ref.fasta")
-      4. output_alignment_{algorithm} = os.path.join(working_directory, f"short_output_files/{algorithm}/test{i}_output.fasta")
+        1. msf_ref = os.path.join(working_directory, f"short_reference_files/test{i}_ref.msf")
+        2. input_sequences = os.path.join(working_directory, f"short_input_files/test{i}_input.fasta")
+        3. reference_alignment = os.path.join(working_directory, f"short_reference_files/test{i}_ref.fasta")
+        4. output_alignment_{algorithm} = os.path.join(working_directory, f"short_output_files/{algorithm}/test{i}_output.fasta")
 
 ## Authors
 * Likita Gangireddy

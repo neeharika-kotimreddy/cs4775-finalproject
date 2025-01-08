@@ -1,6 +1,6 @@
 # Benchmarking Study: Evaluation of Multiple Sequence Alignment Algorithms
 
-This project evaluates four prominent Multiple Sequence Alignment (MSA) algorithms: MUSCLE, MAFFT, Clustal Omega, and Kalign. The benchmark provides insights into their performance based on speed, accuracy, and Sum-of-Pairs (SP) scores, aiding researchers in selecting the most appropriate algorithm for various biological sequence alignment tasks. This is my final project for the class CS 4775: Computational Genetics and Genomics, which I took the fall 2023 semester.
+This project evaluates four prominent Multiple Sequence Alignment (MSA) algorithms: MUSCLE, MAFFT, Clustal Omega, and Kalign. The benchmark provides insights into their performance based on speed, accuracy, and Sum-of-Pairs (SP) scores, aiding researchers in selecting the most appropriate algorithm for various biological sequence alignment tasks. This is my final project for the class CS 4775: Computational Genetics and Genomics at Cornell, which I took the fall 2023 semester.
 
 ## Description
 

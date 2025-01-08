@@ -46,7 +46,7 @@ Before using the project, ensure the following are installed:
 
 ## Authors
 * Likita Gangireddy
-* Neeharika Kotimreddy
 * Manvir Chahal
+* Neeharika Kotimreddy
 * Rhea Kak
 

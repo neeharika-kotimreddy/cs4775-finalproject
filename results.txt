@@ -1,0 +1,16 @@
+muscle avg time: 11207.310967975192
+muscle avg accuracy: 0.31003112568156904
+muscle avg memory: 52353.88888888889
+muscle avg sp score: 1606792.6666666667
+mafft avg time: 557.5092103746202
+mafft avg accuracy: 0.2972349379501421
+mafft avg memory: 448.0
+mafft avg sp score: 986977.7777777778
+clustalo avg time: 1738.4729650285508
+clustalo avg accuracy: 0.3290510613862454
+clustalo avg memory: 50991.0
+clustalo avg sp score: 802930.7777777778
+kalign avg time: 135.19798384772406
+kalign avg accuracy: 0.4184165826032562
+kalign avg memory: 51725.88888888889
+kalign avg sp score: 476771.0

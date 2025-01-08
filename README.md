@@ -1,40 +1,54 @@
-# Steps to Reproduce Benchmark Study
+# Benchmarking Study: Evaluation of Multiple Sequence Alignment Algorithms
 
-## Clone this repository
-## Install required libraries for algorithms 
-### Install Clustal Omega 
-1. Download the Source code .tar.gz : http://www.clustal.org/omega/
-2. follow the steps in this install file: http://www.clustal.org/omega/INSTALL
-### Install KAlign
-1. follow the installation steps here: https://github.com/TimoLassmann/kalign
-### Install MAFFT 
-1. follow the installation steps here: https://mafft.cbrc.jp/alignment/software/
-### Install MUSCLE
-1. follow the installation steps here: https://github.com/rcedgar/muscle?tab=readme-ov-file
+This project evaluates four prominent Multiple Sequence Alignment (MSA) algorithms: MUSCLE, MAFFT, Clustal Omega, and Kalign. The benchmark provides insights into their performance based on speed, accuracy, and Sum-of-Pairs (SP) scores, aiding researchers in selecting the most appropriate algorithm for various biological sequence alignment tasks. This is my final project for the class CS 4775: Computational Genetics and Genomics, which I took the fall 2023 semester.
 
+## Description
 
-## Modify the paths in the algorithm 
-in the run_msa function, ensure that you modify the paths for each algorithms to your respective path based on where you have installed tha algorithm and its required libraries
+Multiple Sequence Alignment (MSA) plays a critical role in computational biology, facilitating evolutionary analysis and protein structure prediction. This project benchmarks four popular MSA algorithms by analyzing their performance on sequence datasets of varying lengths, sourced from BAliBASE Reference Sets 1 and 9. The study examines the computational speed, alignment accuracy, and SP scores of each algorithm and compares their efficiency on short versus long sequences. The goal is to guide researchers in choosing the optimal alignment algorithm for their specific data requirements.
 
-## Run the benchmark algorithm
-cd into the benchmarkStudyCS4775 folder and run the following terminal command: python3 benchmark.py
+## Getting Started
 
-## Run algorithm on short sequences and long sequences
-Modify the paths of the reference, output, and input files in the main function. 
-Include the following pathe for long sequences:
-1. msf_ref = os.path.join(working_directory, f"reference_files/test{i}_ref.msf")
-2. input_sequences = os.path.join(working_directory, f"input_files/test{i}_input.fasta")
-3. reference_alignment = os.path.join(working_directory, f"reference_files/test{i}_ref.fasta")
-4. output_alignment_{algorithm} = os.path.join(working_directory, f"output_files/{algorithm}/test{i}_output.fasta")
+### Dependencies
 
-Include the following paths for short sequences:
-1. msf_ref = os.path.join(working_directory, f"short_reference_files/test{i}_ref.msf")
-2. input_sequences = os.path.join(working_directory, f"short_input_files/test{i}_input.fasta")
-3. reference_alignment = os.path.join(working_directory, f"short_reference_files/test{i}_ref.fasta")
-4. output_alignment_{algorithm} = os.path.join(working_directory, f"short_output_files/{algorithm}/test{i}_output.fasta")
+Before using the project, ensure the following are installed:
+- **Python 3.x** with the following libraries:
+  - `os`
+  - `Biopython`
+  - `time`
+- External tools:
+  - [Clustal Omega](http://www.clustal.org/omega/)
+  - [KAlign](https://github.com/TimoLassmann/kalign)
+  - [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+  - [MUSCLE](https://github.com/rcedgar/muscle?tab=readme-ov-file)
 
 
+### Installing
 
-## Check results 
+1. Clone the repository.
+2. Install required libraries and external tools listed above.
+3. Modify the `run_msa` function in `benchmark.py` to reflect the correct paths to your installed tools.
+
+### Executing the program
+1. Navigate to the project directory and run 
+     ```bash
+     python3 benchmark.py
+2. To analyze both short and long sequences, modify the paths in the main function of benchmark.py as follows:
+  Long Sequences:
+   ```bash
+      1. msf_ref = os.path.join(working_directory, f"reference_files/test{i}_ref.msf")
+      2. input_sequences = os.path.join(working_directory, f"input_files/test{i}_input.fasta")
+      3. reference_alignment = os.path.join(working_directory, f"reference_files/test{i}_ref.fasta")
+      4. output_alignment_{algorithm} = os.path.join(working_directory, f"output_files/{algorithm}/test{i}_output.fasta")
+  
+  Short Sequences:
+  ```bash
+      1. msf_ref = os.path.join(working_directory, f"short_reference_files/test{i}_ref.msf")
+      2. input_sequences = os.path.join(working_directory, f"short_input_files/test{i}_input.fasta")
+      3. reference_alignment = os.path.join(working_directory, f"short_reference_files/test{i}_ref.fasta")
+      4. output_alignment_{algorithm} = os.path.join(working_directory, f"short_output_files/{algorithm}/test{i}_output.fasta")
+      
+      
+      
+    ## Check results 
 Results of the benchmark study will be written to the results.txt file
 

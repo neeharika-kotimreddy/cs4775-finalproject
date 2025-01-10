@@ -6,6 +6,8 @@ This project evaluates four prominent Multiple Sequence Alignment (MSA) algorith
 
 Multiple Sequence Alignment (MSA) plays a critical role in computational biology, facilitating evolutionary analysis and protein structure prediction. This project benchmarks four popular MSA algorithms by analyzing their performance on sequence datasets of varying lengths, sourced from BAliBASE Reference Sets 1 and 9. The study examines the computational speed, alignment accuracy, and SP scores of each algorithm and compares their efficiency on short versus long sequences. The goal is to guide researchers in choosing the optimal alignment algorithm for their specific data requirements.
 
+--- 
+
 ## Getting Started
 
 ### Dependencies
@@ -43,6 +45,8 @@ Before using the project, ensure the following are installed:
     2. input_sequences = os.path.join(working_directory, f"short_input_files/test{i}_input.fasta")
     3. reference_alignment = os.path.join(working_directory, f"short_reference_files/test{i}_ref.fasta")
     4. output_alignment_{algorithm} = os.path.join(working_directory, f"short_output_files/{algorithm}/test{i}_output.fasta")
+
+--- 
 
 ## Authors
 * Likita Gangireddy
